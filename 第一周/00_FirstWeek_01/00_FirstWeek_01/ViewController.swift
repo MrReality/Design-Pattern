@@ -23,19 +23,45 @@ class ViewController: UIViewController {
     /// slider
     @IBOutlet var slider: UISlider!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        slider.minimumValue = 0
+        slider.maximumValue = 1
+        
+        inputTF.keyboardType = .numberPad
+        if((inputTF.text?.isEmpty)! == false){
+            inputTF.text = "0"
+        }
+        slider.addTarget(self, action: #selector(sliderAction(slider:)), for: .valueChanged)
+//        inputTF.delegate = self
+    }
+    
+    /// MARK: 计算结果
+    func resultAction(){
 
-        self.inputTF.keyboardType = UIKeyboardTypeNumberPad
-        self.inputTF.delegate = self
+        let input = NSDecimalNumber(string: inputTF.text)
+        /// tip
+        let persent = slider.value * 100
+        /// tip 值
+        let persentValue = input.floatValue * slider.value
+        tipLabel.text = "Tip(\(persent)%)"
+        tipNumLabel.text = "\(persentValue)"
+        totalNumLabel.text = "$\(persentValue + input.floatValue)"
+    }
+    
+    @objc func sliderAction(slider : UISlider) -> Void {
+        resultAction()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-
+    @IBAction func sliderAction(_ sender: Any) {
+//        resultAction()
     }
-
+    @IBAction func inputAction(_ sender: Any) {
+        resultAction()
+    }
+    
 
 }
 
