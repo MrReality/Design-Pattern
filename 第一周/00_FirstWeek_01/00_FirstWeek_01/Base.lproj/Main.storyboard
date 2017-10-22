@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -28,21 +28,18 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="inputAction:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="5aU-4U-Jvq"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YsT-H5-9Eg">
-                                <rect key="frame" x="50" y="176" width="88" height="21"/>
+                                <rect key="frame" x="7" y="176" width="131" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="88" id="mWa-Cj-NDe"/>
+                                    <constraint firstAttribute="width" constant="131" id="mWa-Cj-NDe"/>
                                     <constraint firstAttribute="height" constant="21" id="w6d-ud-gTE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abg-FV-YcD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abg-FV-YcD">
                                 <rect key="frame" x="231.5" y="176" width="100" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="abf-eK-JDP"/>
@@ -82,9 +79,9 @@
                             <constraint firstItem="abg-FV-YcD" firstAttribute="top" secondItem="GWR-F7-A6i" secondAttribute="bottom" constant="26" id="B87-dt-gij"/>
                             <constraint firstItem="abg-FV-YcD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="Do7-Z4-XFM"/>
                             <constraint firstItem="9D4-bJ-aqe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="FST-A9-2W4"/>
-                            <constraint firstItem="9D4-bJ-aqe" firstAttribute="width" secondItem="YsT-H5-9Eg" secondAttribute="width" id="HTz-V1-hhY"/>
+                            <constraint firstItem="9D4-bJ-aqe" firstAttribute="width" secondItem="YsT-H5-9Eg" secondAttribute="width" constant="-43" id="HTz-V1-hhY"/>
                             <constraint firstItem="YsT-H5-9Eg" firstAttribute="top" secondItem="GWR-F7-A6i" secondAttribute="bottom" constant="26" id="Lbf-YF-RPE"/>
-                            <constraint firstItem="YsT-H5-9Eg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="Lru-bU-cb4"/>
+                            <constraint firstItem="YsT-H5-9Eg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" constant="-21.25" id="Lru-bU-cb4"/>
                             <constraint firstItem="mye-Oa-4LE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="P9u-zy-Abs"/>
                             <constraint firstItem="mye-Oa-4LE" firstAttribute="width" secondItem="abg-FV-YcD" secondAttribute="width" id="SwT-2H-p5T"/>
                             <constraint firstItem="GWR-F7-A6i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="UMF-kh-KJT"/>
@@ -97,6 +94,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="inputTF" destination="GWR-F7-A6i" id="QKQ-aE-cy0"/>
                         <outlet property="slider" destination="Kqf-Oq-TAZ" id="eyt-xO-9W4"/>
                         <outlet property="tipLabel" destination="YsT-H5-9Eg" id="aOi-VI-Cak"/>
                         <outlet property="tipNumLabel" destination="abg-FV-YcD" id="enH-KP-5iR"/>

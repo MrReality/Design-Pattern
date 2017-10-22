@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    /// 输入框
+
     @IBOutlet var inputTF: UITextField!
     /// tip label
     @IBOutlet var tipLabel: UILabel!
@@ -31,16 +31,16 @@ class ViewController: UIViewController {
         slider.maximumValue = 1
         
         inputTF.keyboardType = .numberPad
-        if((inputTF.text?.isEmpty)! == false){
+        if((inputTF.text?.isEmpty)! == true){
             inputTF.text = "0"
         }
         slider.addTarget(self, action: #selector(sliderAction(slider:)), for: .valueChanged)
-//        inputTF.delegate = self
+        inputTF.delegate = self
     }
     
     /// MARK: 计算结果
     func resultAction(){
-
+        self.view.endEditing(true)
         let input = NSDecimalNumber(string: inputTF.text)
         /// tip
         let persent = slider.value * 100
