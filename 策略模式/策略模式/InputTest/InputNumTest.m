@@ -17,12 +17,11 @@
     }
     /// 正则判断
     NSUInteger numberOfMatches = [self testRegexWithRegix:@"^[0-9]*$" andText:tf.text];
-    
-    if(!numberOfMatches){    /// 输入有误
+    if(!numberOfMatches)    /// 输入有误
         self.desc = @"输入不全是数字";
-    }else{                   /// 输入正确
+    else                                /// 输入正确
         self.desc = nil;
-    }
+    
     return self.desc ? NO : YES;
 }
 

@@ -503,6 +503,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B4A2AYAJR2;
 				INFOPLIST_FILE = "桥接模式/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Mix-Reality.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -517,6 +518,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B4A2AYAJR2;
 				INFOPLIST_FILE = "桥接模式/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Mix-Reality.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -14,7 +14,6 @@
 
 /// 车
 @property (nonatomic, strong, nonnull) Car *car;
-
 /// 开
 - (void)open;
 /// 关
