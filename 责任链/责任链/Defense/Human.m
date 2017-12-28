@@ -10,7 +10,6 @@
 #import "PhysicalAttack.h"
 #import "MagicAttack.h"
 #import "LightningSkill.h"
-#import "AddBloodSkill.h"
 
 @implementation Human
 

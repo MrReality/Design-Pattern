@@ -19,7 +19,6 @@
 		F1A0E3C11FF496E9003F304C /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A0E3AD1FF496E8003F304C /* Human.m */; };
 		F1A0E3C21FF496E9003F304C /* MagicDefense.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A0E3AF1FF496E8003F304C /* MagicDefense.m */; };
 		F1A0E3C31FF496E9003F304C /* PhysicalDefense.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A0E3B11FF496E8003F304C /* PhysicalDefense.m */; };
-		F1A0E3C41FF496E9003F304C /* AddBloodSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A0E3B41FF496E9003F304C /* AddBloodSkill.m */; };
 		F1A0E3C51FF496E9003F304C /* BaseSkills.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A0E3B61FF496E9003F304C /* BaseSkills.m */; };
 		F1A0E3C61FF496E9003F304C /* LightningSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A0E3B81FF496E9003F304C /* LightningSkill.m */; };
 		F1A0E3C71FF496E9003F304C /* BaseAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A0E3BB1FF496E9003F304C /* BaseAttack.m */; };
@@ -70,8 +69,6 @@
 		F1A0E3AF1FF496E8003F304C /* MagicDefense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicDefense.m; sourceTree = "<group>"; };
 		F1A0E3B01FF496E8003F304C /* PhysicalDefense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicalDefense.h; sourceTree = "<group>"; };
 		F1A0E3B11FF496E8003F304C /* PhysicalDefense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhysicalDefense.m; sourceTree = "<group>"; };
-		F1A0E3B31FF496E9003F304C /* AddBloodSkill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBloodSkill.h; sourceTree = "<group>"; };
-		F1A0E3B41FF496E9003F304C /* AddBloodSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBloodSkill.m; sourceTree = "<group>"; };
 		F1A0E3B51FF496E9003F304C /* BaseSkills.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSkills.h; sourceTree = "<group>"; };
 		F1A0E3B61FF496E9003F304C /* BaseSkills.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSkills.m; sourceTree = "<group>"; };
 		F1A0E3B71FF496E9003F304C /* LightningSkill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightningSkill.h; sourceTree = "<group>"; };
@@ -185,9 +182,9 @@
 		F1A0E3A81FF496E8003F304C /* Defense */ = {
 			isa = PBXGroup;
 			children = (
+				F1A0E3AB1FF496E8003F304C /* DefenseInterface.h */,
 				F1A0E3A91FF496E8003F304C /* DefenseHandler.h */,
 				F1A0E3AA1FF496E8003F304C /* DefenseHandler.m */,
-				F1A0E3AB1FF496E8003F304C /* DefenseInterface.h */,
 				F1A0E3AC1FF496E8003F304C /* Human.h */,
 				F1A0E3AD1FF496E8003F304C /* Human.m */,
 				F1A0E3AE1FF496E8003F304C /* MagicDefense.h */,
@@ -201,8 +198,6 @@
 		F1A0E3B21FF496E9003F304C /* Skills */ = {
 			isa = PBXGroup;
 			children = (
-				F1A0E3B31FF496E9003F304C /* AddBloodSkill.h */,
-				F1A0E3B41FF496E9003F304C /* AddBloodSkill.m */,
 				F1A0E3B51FF496E9003F304C /* BaseSkills.h */,
 				F1A0E3B61FF496E9003F304C /* BaseSkills.m */,
 				F1A0E3B71FF496E9003F304C /* LightningSkill.h */,
@@ -361,7 +356,6 @@
 				F1A0E3C21FF496E9003F304C /* MagicDefense.m in Sources */,
 				F1A0E3C31FF496E9003F304C /* PhysicalDefense.m in Sources */,
 				F1A0E3C61FF496E9003F304C /* LightningSkill.m in Sources */,
-				F1A0E3C41FF496E9003F304C /* AddBloodSkill.m in Sources */,
 				F1A0E3C91FF496E9003F304C /* PhysicalAttack.m in Sources */,
 				F1A0E3C81FF496E9003F304C /* MagicAttack.m in Sources */,
 				F1A0E3791FF49681003F304C /* ViewController.m in Sources */,

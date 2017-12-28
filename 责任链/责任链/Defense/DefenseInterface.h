@@ -16,8 +16,6 @@
 #define kMagicBaseDamage 150
 /// 基础闪电伤害
 #define kLightningBaseDamage 150
-/// 回血值
-#define kAddBloodCount 50
 
 /// MARK: 防御接口
  @protocol DefenseInterface <NSObject>

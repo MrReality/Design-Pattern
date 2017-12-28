@@ -16,7 +16,6 @@
 #import "MagicAttack.h"
 
 #import "LightningSkill.h"
-#import "AddBloodSkill.h"
 
 #ifndef weakify
 #if DEBUG
@@ -137,19 +136,6 @@
         NSInteger random = arc4random_uniform((int)self.randomArray.count);
         id attack = NSClassFromString(self.randomArray[random]);
         /// 响应攻击
-        if([[attack class] isEqual:[AddBloodSkill class]]){       /// 加血技能
-            if(self.isPerson1HitPerson2){       /// 玩家 1 加血
-                self.person1.hp += kAddBloodCount;
-                NSLog(@"玩家 1 对自己进行加血, 剩余血量: %.2f", self.person1.hp);
-            }else{                                            /// 玩家 2 加血
-                self.person2.hp += kAddBloodCount;
-                NSLog(@"玩家 2 对自己进行加血, 剩余血量: %.2f", self.person2.hp);
-            }
-            NSLog(@"--------------------------------------------------------------");
-            self.isPerson1HitPerson2 = !self.isPerson1HitPerson2;
-            return;
-        }
-        /// 伤害技能
         self.isPerson1HitPerson2 ? [self.p2Defense handleRequest:attack attackerName:@"玩家 1" andVictimerName:@"玩家 2"] : [self.p1Defense handleRequest:attack attackerName:@"玩家 2" andVictimerName:@"玩家 1"];
         self.isPerson1HitPerson2 = !self.isPerson1HitPerson2;
     }];
@@ -201,7 +187,7 @@
 
 - (NSMutableArray *)randomArray{
     if(!_randomArray){
-        _randomArray = @[@"PhysicalAttack", @"MagicAttack", @"LightningSkill", @"AddBloodSkill"].mutableCopy;
+        _randomArray = @[@"PhysicalAttack", @"MagicAttack", @"LightningSkill"].mutableCopy;
     }
     return _randomArray;
 }
